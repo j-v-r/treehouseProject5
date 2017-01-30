@@ -1,0 +1,35 @@
+/* Content */
+
+h3 {
+	@extend %navTextStyle;
+	color: $secondary_text_color;
+	font-weight: 400;
+	text-align: center;
+	margin: 2rem 0;
+	}
+
+section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	background-color: $section_bckgrd_color;
+	padding: 1rem;
+	margin: 0;
+  	color: black;
+
+	h4 {
+	  	font-weight: 600;
+	  	color: $secondary_text_color;
+	}
+
+	div {
+
+	 @media only screen and (min-width: #{$tabletBreak}){
+	 	@include divColumn(48%, 0 .5%, 0);
+		}
+
+		@media only screen and (min-width: #{$desktopBreak}) {
+			@include divColumn(30%, 0 .5%, .25rem);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+//BUTTON STYLES
+
+
+
+@mixin headerLinkStyles($text_color, $padding, $border_bttm, $border_right) {
+	color: $text_color;
+    padding: $padding;
+    border-bottom: $border_bttm;
+    border-right: $border_right;
+}
+
+@mixin button($padding, $margin, $background-color, $font_weight, $font-size: initial) {
+	padding: $padding;
+	margin: $margin;
+	background-color: $background-color;
+	font-weight: $font_weight;
+	font-size: $font-size;
+}
+
+@mixin divColumn($width, $margin, $padding) {
+	width: $width;
+	margin: $margin;
+	padding: $padding;
+}

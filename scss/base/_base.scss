@@ -1,0 +1,36 @@
+/* General Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: $text_color;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: $text_color;
+
+  &:hover {
+  	color: $border_color;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+  margin: auto;
+}
+
+/* Clear Fix */
+
+.clearfix {
+  overflow: auto;
+}
+
+

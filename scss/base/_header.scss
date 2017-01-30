@@ -1,0 +1,60 @@
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $header_bckgrd_color;
+  font-weight: 500;
+  padding: .5rem;
+  padding-bottom: 1rem;
+
+  /* Navigation */
+
+  	ul {
+  		list-style-type: none;
+  		margin: 10px 0;
+  		padding: 0;
+
+      @media only screen and (min-width: #{$tabletBreak}) {
+        list-style-type: none;
+        margin: 2rem 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+      }
+
+  		li {
+        @extend %navTextStyle;
+        @include button(12px, 12px 0, $section_bckgrd_color, 900);
+  	  	display: inline-block;
+  			width: 90%;
+
+        @media only screen and (min-width: #{$tabletBreak}) {
+          background-color: $header_bckgrd_color;
+          padding: 0;
+        }
+
+  			a {
+  				color: $header_bckgrd_color;
+
+          @media only screen and (min-width: #{$tabletBreak}) {
+            @include headerLinkStyles($text_color, .5rem, $headerNavBorder, $headerNavBorder)
+          }
+  			}
+  		}
+  	}
+    
+  @media only screen and (min-width: #{$tabletBreak}) {
+
+    display: flex;
+    flex-direction: row;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding: 1rem;
+    }
+  }
+}
