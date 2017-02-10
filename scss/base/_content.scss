@@ -1,9 +1,9 @@
 /* Content */
 
 h3 {
+	@include fontStyles(400);
 	@extend %navTextStyle;
 	color: $secondary_text_color;
-	font-weight: 400;
 	text-align: center;
 	margin: 2rem 0;
 	}
@@ -15,10 +15,10 @@ section {
 	background-color: $section_bckgrd_color;
 	padding: 1rem;
 	margin: 0;
-  	color: black;
+  	color: $secondary_text_color;
 
 	h4 {
-	  	font-weight: 600;
+		@include fontStyles(600);
 	  	color: $secondary_text_color;
 	}
 

@@ -9,17 +9,17 @@ footer {
   	color: $text_color;
 
   	span{
-	  font-weight: 400;
+    @include fontStyles(400);
 	  border-bottom: 3px solid #B0E0E6;
 		}
 	}
 
 	p {
-	  font-weight: 300;
+    @include fontStyles(300);
 	}
 
 	span {
-	  font-weight: 600;
+    @include fontStyles(600);
 	}
 
   ul {

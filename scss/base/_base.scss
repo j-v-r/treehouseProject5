@@ -5,9 +5,9 @@
 }
 
 body {
+  @include fontStyles(400, 'Open Sans');
   text-align: center;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
   color: $text_color;
 }
 
