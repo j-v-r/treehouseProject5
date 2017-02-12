@@ -1,25 +1,23 @@
 /* Footer */
 
 footer {
-
+  @include fontStyles($color: $text_color);
   background-color: $footer_bckgrd_color;
   padding: 1rem;
 
   h3 {
-  	color: $text_color;
-
   	span{
-    @include fontStyles(400);
+    @include fontStyles($font-weight: 400, $color: $text_color);
 	  border-bottom: 3px solid #B0E0E6;
 		}
 	}
 
 	p {
-    @include fontStyles(300);
+    @include fontStyles($font-weight: 300, $color: $text_color);
 	}
 
 	span {
-    @include fontStyles(600);
+    @include fontStyles($font-weight: 600, $color: $text_color);
 	}
 
   ul {

@@ -1,7 +1,7 @@
 /* Header */
 
 header {
-  @include fontStyles(500);
+  @include fontStyles($font-weight: 500, $color: $text_color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +36,7 @@ header {
         }
 
   			a {
-  				color: $header_bckgrd_color;
+          @include fontStyles($color: $header_bckgrd_color);
 
           @media only screen and (min-width: #{$tabletBreak}) {
             @include headerLinkStyles($text_color, .5rem, $headerNavBorder, $headerNavBorder)

@@ -5,19 +5,18 @@
 }
 
 body {
-  @include fontStyles(400, 'Open Sans');
+  @include fontStyles(400, 'Open Sans', $text_color);
   text-align: center;
   margin: 0;
-  color: $text_color;
 }
 
 a {
+  @include fontStyles($color: $text_color);
   text-decoration: none;
   padding: 10px;
-  color: $text_color;
 
   &:hover {
-  	color: $border_color;
+    @include fontStyles($color: $border_color);
   }
 }
 
